@@ -26,8 +26,10 @@ const App = () => {
   return (
     <WagmiProvider config={config}>
       <QueryClientProvider client={queryClient}>
-        <WalletConnector />
-        <SendEthereum theme={theme} setTheme={setTheme} current={current} />
+        <div className="h-screen">
+          <WalletConnector />
+          <SendEthereum theme={theme} setTheme={setTheme} current={current} />
+        </div>
       </QueryClientProvider>
     </WagmiProvider>
   );

@@ -20,7 +20,7 @@ const SendEthereum = ({ theme, setTheme, current }) => {
 
   return (
     <div
-      className="min-h-screen w-full"
+      className="w-screen"
       style={{ background: current.background, color: current.text }}
     >
       <MyAddress theme={theme} current={current} />
